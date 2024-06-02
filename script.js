@@ -5,7 +5,7 @@ let nextId = JSON.parse(localStorage.getItem("nextId"));
 // Todo: create a function to generate a unique task id
 function generateTaskId() {
 // Variable that will get current timestamp.
-    const timestamp = Data.now();
+    const timestamp = Date.now();
 // Variable that will generate random number between 0 and 999.
     const randomNum = Math.floor(Math.random() * 1000);
 
