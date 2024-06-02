@@ -6,6 +6,7 @@ let nextId = JSON.parse(localStorage.getItem("nextId"));
 function generateTaskId() {
 // Variable that will get current timestamp.
     const timestamp = Data.now();
+// Variable that will generate random number between 0 and 999.
     const randomNum = Math.floor(Math.random() * 1000);
 
 }
