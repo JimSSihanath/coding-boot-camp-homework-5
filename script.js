@@ -8,6 +8,7 @@ function generateTaskId() {
     const timestamp = Date.now();
 // Variable that will generate random number between 0 and 999.
     const randomNum = Math.floor(Math.random() * 1000);
+    const taskId = `TASK-${timestamp}-${randomNum}`;
 
 }
 
