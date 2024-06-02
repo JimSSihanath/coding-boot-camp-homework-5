@@ -10,7 +10,7 @@ function generateTaskId() {
     const randomNum = Math.floor(Math.random() * 1000);
 // Variable that will combine Timestamp and Random Number Variables.
     const taskId = `TASK-${timestamp}-${randomNum}`;
-
+    return taskId;
 }
 
 // Todo: create a function to create a task card
