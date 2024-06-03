@@ -23,6 +23,7 @@ function createTaskCard(task) {
     taskElement.textContent = task;
 // Append the task to the Task Card.
     taskCard.appendChild(taskElement);
+// Append taskCard to taskBoard.
     const taskBoard = document.getElementById('task-board');
     taskBoard.appendChild(taskCard);
 }
