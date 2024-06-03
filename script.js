@@ -15,7 +15,9 @@ function generateTaskId() {
 
 // Todo: create a function to create a task card
 function createTaskCard(task) {
+// Created the main Task Card element with a variable.
     const taskCard = document.createElement('div');
+    taskCard.classList.add('task-card');
 }
 
 // Todo: create a function to render the task list and make cards draggable
