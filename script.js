@@ -23,6 +23,8 @@ function createTaskCard(task) {
     taskElement.textContent = task;
 // Append the task to the Task Card.
     taskCard.appendChild(taskElement);
+    const taskBoard = document.getElementById('task-board');
+    taskBoard.appendChild(taskCard);
 }
 
 // Todo: create a function to render the task list and make cards draggable
