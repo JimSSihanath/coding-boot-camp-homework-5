@@ -21,6 +21,7 @@ function createTaskCard(task) {
 // Create an element for the Task.
     const taskElement = document.createElement('p');
     taskElement.textContent = task;
+// Append the task to the Task Card.
     taskCard.appendChild(taskElement);
 }
 
