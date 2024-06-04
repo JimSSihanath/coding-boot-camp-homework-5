@@ -30,6 +30,7 @@ function createTaskCard(task) {
 
 // Todo: create a function to render the task list and make cards draggable
 function renderTaskList() {
+// Defined variable as taskList.
     const taskList = document.createElement('ol');
 }
 
