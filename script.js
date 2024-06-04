@@ -48,6 +48,16 @@ function renderTaskList() {
 function makeDraggable(element) {
     let isDragging = false;
     let offsetX, offsetY;
+
+    element.addEventListener('mousedown', e => {
+        isDragging = true;
+        offsetX = e.clientX - element.getBoundingClientRect().left;
+        offsetY = e.clientY - element.getBoundingClientRect().top;
+    });
+
+    document.addEventListener('mousemove', e => {
+        
+    })
 }
 
 // Todo: create a function to handle adding a new task
