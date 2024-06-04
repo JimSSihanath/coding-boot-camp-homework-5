@@ -61,6 +61,10 @@ function makeDraggable(element) {
             element.style.top = e.clientY - offsetY + 'px';
         }
     });
+
+    document.addEventListener('mouseup', () => {
+        isDragging = false;
+    });
 }
 
 // Todo: create a function to handle adding a new task
