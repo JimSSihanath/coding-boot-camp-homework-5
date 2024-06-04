@@ -32,6 +32,8 @@ function createTaskCard(task) {
 function renderTaskList() {
 // Defined variable as taskList.
     const taskList = document.getElementById('task-list');
+// Defined another variable as taskTemplate.
+    const taskTemplate = document.getElementById('task-template');
 }
 
 // Todo: create a function to handle adding a new task
