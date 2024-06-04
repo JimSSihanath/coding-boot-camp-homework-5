@@ -39,6 +39,8 @@ function renderTaskList() {
         clone.querySelector('.task-title').textContent = task.title;
         clone.querySelector('.task-description').textContent = task.description;
         taskList.appendChild(clone);
+// Make the Task Card draggable by the user.
+        makeDraggable(clone.querySelector('.task-card'));
     })
 }
 
