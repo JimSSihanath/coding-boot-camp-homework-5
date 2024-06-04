@@ -34,6 +34,12 @@ function renderTaskList() {
     const taskList = document.getElementById('task-list');
 // Defined another variable as taskTemplate.
     const taskTemplate = document.getElementById('task-template');
+    task.forEach(task => {
+        const clone = document.importNode(taskTemplate.content, true);
+        clone.querySelector('.task-title').textContent = task.title;
+        clone.querySelector('.task-description').textContent = task.description;
+        taskList.appendChild(clone);
+    })
 }
 
 // Todo: create a function to handle adding a new task
