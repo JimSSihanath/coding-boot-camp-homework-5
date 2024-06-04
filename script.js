@@ -41,7 +41,13 @@ function renderTaskList() {
         taskList.appendChild(clone);
 // Make the Task Card draggable by the user.
         makeDraggable(clone.querySelector('.task-card'));
-    })
+    });
+}
+
+// Creating the makeDraggable Function.
+function makeDraggable(element) {
+    let isDragging = false;
+    let offsetX, offsetY;
 }
 
 // Todo: create a function to handle adding a new task
